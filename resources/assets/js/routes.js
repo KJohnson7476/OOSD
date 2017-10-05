@@ -8,6 +8,10 @@ let routes = [
     {
         path:'/about',
         component:require('./components/About.vue')
+    },
+    {
+        path:'/vision',
+        component:require('./components/Vision.vue')
     }
 ];
 

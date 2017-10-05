@@ -30,10 +30,17 @@
     <body>
 
         <div id="app">
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>
 
-            <router-view></router-view>
+            <div class="container">
+
+                @include('partials.nav')
+
+                <!-- Main component for a primary marketing message or call to action -->
+                <div class="jumbotron">
+                    <router-view></router-view>
+                </div>
+
+            </div> <!-- /container -->
         </div>
 
         <script src="./././js/app.js"></script>
