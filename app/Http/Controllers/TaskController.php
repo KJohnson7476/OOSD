@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Task;
+use App\User;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -14,7 +15,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        return Task::with('user')->get();
+        return Task::latest()->with('user')->get();
     }
 
     /**
@@ -35,7 +36,14 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+           'name' => 'required',
+           'body' => 'required'
+        ]);
+
+        $user = User::find(1);
+        $user->task()->create($request->all());
+        return "success";
     }
 
     /**
