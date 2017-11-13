@@ -16,3 +16,15 @@ Route::get('/', function () {
 });
 
 Route::resource('task', 'TaskController');
+
+//Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::post('/registerThis', 'UserController@register');
+//Route::resource('registerThis', 'UserController');
+
+
+//Route::get('login', 'UserController@login');
+//Route::get('logout', 'UserController@logout');

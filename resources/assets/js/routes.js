@@ -16,6 +16,14 @@ let routes = [
     {
         path:'/create',
         component:require('./components/Form.vue')
+    },
+    {
+        path:'/login',
+        component:require('./components/Login.vue')
+    },
+    {
+        path:'/register',
+        component:require('./components/Register.vue')
     }
 ];
 
