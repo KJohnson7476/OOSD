@@ -38,6 +38,12 @@
         },
         methods:{
             addTask() {
+                console.log('testing');
+                console.log();
+
+
+
+
                 axios.post('task', this.taskData)
                     .then(response=>{
                         console.log(response)

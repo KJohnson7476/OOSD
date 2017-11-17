@@ -22,7 +22,7 @@
                                 <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control" v-model="registerData.email" value="" required>
+                                    <input id="email" type="email" class="form-control" v-model="registerData.email" required>
 
                                 </div>
                             </div>
@@ -76,16 +76,19 @@
 
                 console.log('register.vue');
                 console.log(this.registerData.name);
+                console.log(this.registerData.email);
+                console.log(this.registerData.password);
+                console.log(this.registerData.token);
                 console.log(this.registerData);
 
 
-                axios.post('registerThis', this.registerData)
-                    .then(response=>{
-                        console.log(response);
-                    })
-                    .catch(error=>{
-                        console.log(error.response);
-                    })
+//                axios.post('registerThis', this.registerData)
+//                    .then(response=>{
+//                        console.log(response);
+//                    })
+//                    .catch(error=>{
+//                        console.log(error.response);
+//                    })
 
 //                axios.post('register', this.registerData)
 //                    .then(response=>{
@@ -98,6 +101,16 @@
 //                        console.log(error.response);
 //                        this.errors=error.response.data;
 //                    })
+                axios.post('registerThis', this.taskData)
+                    .then(response=>{
+                        console.log(response)
+                        this.registerData = "";
+                        this.$router.push('/');
+                    })
+                    .catch(error=>{
+                        console.log(error.response);
+                        this.errors=error.response.data;
+                    })
             }
         }
 

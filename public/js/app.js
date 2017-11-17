@@ -13684,9 +13684,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-27bba267", Component.options)
+    hotAPI.createRecord("data-v-3753e150", Component.options)
   } else {
-    hotAPI.reload("data-v-27bba267", Component.options)
+    hotAPI.reload("data-v-3753e150", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -13702,6 +13702,9 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -13966,10 +13969,9 @@ var render = function() {
                         }
                       }
                     }),
+                    _vm._v(" "),
                     _vm._v(
-                      "\n\n                        Assigned by " +
-                        _vm._s(task.user.name) +
-                        "\n\n                    "
+                      "\n                        Assigned by don't worry about it\n                        "
                     )
                   ]),
                   _vm._v(" "),
@@ -14027,7 +14029,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-27bba267", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-3753e150", module.exports)
   }
 }
 
@@ -14065,9 +14067,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-043e1335", Component.options)
+    hotAPI.createRecord("data-v-4a1d7738", Component.options)
   } else {
-    hotAPI.reload("data-v-043e1335", Component.options)
+    hotAPI.reload("data-v-4a1d7738", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -14145,7 +14147,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-043e1335", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-4a1d7738", module.exports)
   }
 }
 
@@ -14183,9 +14185,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-89fefe20", Component.options)
+    hotAPI.createRecord("data-v-8a9914be", Component.options)
   } else {
-    hotAPI.reload("data-v-89fefe20", Component.options)
+    hotAPI.reload("data-v-8a9914be", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -14259,7 +14261,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-89fefe20", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-8a9914be", module.exports)
   }
 }
 
@@ -14297,9 +14299,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-60f23fcc", Component.options)
+    hotAPI.createRecord("data-v-1d8cacbd", Component.options)
   } else {
-    hotAPI.reload("data-v-60f23fcc", Component.options)
+    hotAPI.reload("data-v-1d8cacbd", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -14357,6 +14359,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         addTask: function addTask() {
             var _this = this;
+
+            console.log('testing');
+            console.log();
 
             axios.post('task', this.taskData).then(function (response) {
                 console.log(response);
@@ -14473,7 +14478,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-60f23fcc", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-1d8cacbd", module.exports)
   }
 }
 
@@ -14511,9 +14516,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-24c4ddde", Component.options)
+    hotAPI.createRecord("data-v-775e7b80", Component.options)
   } else {
-    hotAPI.reload("data-v-24c4ddde", Component.options)
+    hotAPI.reload("data-v-775e7b80", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -14704,7 +14709,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-24c4ddde", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-775e7b80", module.exports)
   }
 }
 
@@ -14742,9 +14747,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5185a22b", Component.options)
+    hotAPI.createRecord("data-v-304e2e9c", Component.options)
   } else {
-    hotAPI.reload("data-v-5185a22b", Component.options)
+    hotAPI.reload("data-v-304e2e9c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -14836,16 +14841,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         registerUser: function registerUser() {
+            var _this = this;
 
             console.log('register.vue');
             console.log(this.registerData.name);
+            console.log(this.registerData.email);
+            console.log(this.registerData.password);
+            console.log(this.registerData.token);
             console.log(this.registerData);
 
-            axios.post('registerThis', this.registerData).then(function (response) {
-                console.log(response);
-            }).catch(function (error) {
-                console.log(error.response);
-            });
+            //                axios.post('registerThis', this.registerData)
+            //                    .then(response=>{
+            //                        console.log(response);
+            //                    })
+            //                    .catch(error=>{
+            //                        console.log(error.response);
+            //                    })
 
             //                axios.post('register', this.registerData)
             //                    .then(response=>{
@@ -14858,6 +14869,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //                        console.log(error.response);
             //                        this.errors=error.response.data;
             //                    })
+            axios.post('registerThis', this.taskData).then(function (response) {
+                console.log(response);
+                _this.registerData = "";
+                _this.$router.push('/');
+            }).catch(function (error) {
+                console.log(error.response);
+                _this.errors = error.response.data;
+            });
         }
     }
 
@@ -14950,12 +14969,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "form-control",
-                      attrs: {
-                        id: "email",
-                        type: "email",
-                        value: "",
-                        required: ""
-                      },
+                      attrs: { id: "email", type: "email", required: "" },
                       domProps: { value: _vm.registerData.email },
                       on: {
                         input: function($event) {
@@ -15038,7 +15052,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-5185a22b", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-304e2e9c", module.exports)
   }
 }
 

@@ -22,7 +22,10 @@
                             <span v-show="!showForm(task.id)"> {{ task.body }} </span>
                             <input v-show="showForm(task.id)" type="text" class="form-control" v-model="taskEditData.body"/>
 
-                            Assigned by {{ task.user.name }}
+                            <!--Assigned by {{ task.user.name }}-->
+                            Assigned by don't worry about it
+                            <!--{{Auth::user()->name}}-->
+
 
                         </div>
 
