@@ -6,7 +6,8 @@
                     <div class="panel-heading">Vision</div>
 
                     <div class="panel-body">
-                        Our Vision
+                        Understand and implement object oriented
+                        software development principles.
                     </div>
                 </div>
             </div>
